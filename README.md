@@ -1,3 +1,5 @@
+# angihomnay
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
@@ -15,6 +17,56 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+///////////////////////////////////////
+
+food-wheel-app
+│
+├── app
+│ ├── page.tsx // trang chọn chức năng (2 ô vuông)
+│ │
+│ ├── random
+│ │ └── page.tsx // quay món có sẵn
+│ │
+│ ├── custom
+│ │ └── page.tsx // quay món tự nhập
+│ │
+│ ├── layout.tsx
+│ └── globals.css
+│
+├── components
+│ ├── FeatureCard
+│ │ └── FeatureCard.tsx // ô vuông chọn chức năng
+│ │
+│ ├── Wheel
+│ │ ├── Wheel.tsx // vòng quay
+│ │ └── Pointer.tsx // kim chỉ
+│ │
+│ ├── FoodInput
+│ │ └── FoodInput.tsx // nhập món custom
+│ │
+│ ├── FoodList
+│ │ └── FoodList.tsx // hiển thị list món
+│ │
+│ └── ResultModal.tsx // popup kết quả
+│
+├── data
+│ └── foods.ts // món có sẵn
+│
+├── hooks
+│ ├── useWheel.ts // logic quay
+│ └── useFoods.ts // quản lý danh sách món
+│
+├── utils
+│ ├── random.ts // random index
+│ └── wheelMath.ts // tính góc quay
+│
+├── types
+│ └── food.ts
+│
+├── styles
+│ └── wheel.module.css
+│
+└── public
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
